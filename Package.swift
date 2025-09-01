@@ -5,17 +5,21 @@ import PackageDescription
 
 let package = Package(
     name: "NumStyleKit",
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v13),
+        .watchOS(.v8),
+        .tvOS(.v15)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "NumStyleKit",
             targets: ["NumStyleKit"]),
     ],
+    dependencies: [],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "NumStyleKit"),
-
+            name: "NumStyleKit",
+            dependencies: []),
     ]
 )
