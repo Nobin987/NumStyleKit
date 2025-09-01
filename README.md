@@ -1,6 +1,6 @@
 # NumStyleKit
 
-A SwiftUI-friendly number formatting SDK for iOS. Supports:
+A SwiftUI-friendly number formatting Library for iOS. Supports:
 
 - Decimal formatting
 - Currency formatting
